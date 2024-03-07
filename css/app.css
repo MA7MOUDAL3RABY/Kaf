@@ -158,7 +158,7 @@ body .btn-primary {
 	width: 25%;
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 770px) {
 	.app-sidebar {
 		width: 100%;
 	}
@@ -470,7 +470,7 @@ body .btn-primary {
 	padding: 0 100px;
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 770px) {
 	.app-header .navbar .menu {
 		display: none;
 	}
@@ -518,7 +518,7 @@ body .btn-primary {
 	right: auto;
 }
 
-@media all and (min-width: 577px) {
+@media all and (min-width: 770px) {
 	.app-header .navbar .options .toggle-btn {
 		display: none;
 	}
@@ -1131,7 +1131,7 @@ body .btn-primary {
 	justify-content: space-between;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 550px) {
 	.line-rate-container {
 		margin: 0;
 		width: 100%;
@@ -1143,10 +1143,10 @@ body .btn-primary {
 	display: flex;
 	align-items: center;
 	gap: 15px;
-	width: 540px;
+	width: 40%;
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 550px) {
 	.line-rate-container .type-of-rate-container {
 		justify-content: space-between;
 		width: 100%;
