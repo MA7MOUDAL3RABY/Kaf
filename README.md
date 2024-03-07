@@ -18,13 +18,14 @@ This repository contains the source code for a website built using HTML, CSS, an
 
 - Clickable Like Icons: Like icons throughout the website are clickable, providing users with a convenient way to express their preferences.
 
+- Review: Rate in comment calculated based on selected 3 rates
 
 ## Repository Structure
 index.html: The main HTML file containing the structure of the website.
 - ar-index.html: the translated page of Kaf in Arabic Language.
 - app.css: The CSS file containing the styles for the website's layout and design.
 - app.js: The JavaScript file containing the scripts for implementing interactive features and functionality with jQuery.
-- assets: the assets folder contain all images and SVG icons that exported from Figma
+- assets: the assets folder contains all images and SVG icons that exported from Figma
 
 ## Usage: 
 you can visit this link:
