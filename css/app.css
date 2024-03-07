@@ -26,9 +26,15 @@
 	}
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1200px) {
 	.container {
 		width: 95%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 75%;
 	}
 }
 
