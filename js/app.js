@@ -202,12 +202,13 @@ $(document).ready(function () {
 		$('#count').text(count);
 	});
 	$('#decrease').click(function () {
-		count = Math.max(0, count - 1);
-		price = Math.max(0, price - 10);
-		// Update the displayed price
-		$('#price').text('$' + price);
-		$('#count').text(count);
-
+		if (count > 1) {
+			count = Math.max(0, count - 1);
+			price = Math.max(0, price - 100);
+			// Update the displayed price
+			$('#price').text('$' + price);
+			$('#count').text(count);
+		}
 	});
 	$('.purchase-btn').click(function () {
 		count = 1;
