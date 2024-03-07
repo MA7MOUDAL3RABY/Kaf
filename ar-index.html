@@ -1,0 +1,771 @@
+<!--
+|=============================================================================================|
+|        _        _              _        ___________         _        _______      _      _  |
+|       / \      | |            / \      |  ________ \       / \      |  ____ \    | |    | | |
+|      / ^ \     | |           / ^ \     | |        \ \     / ^ \     | |    \ \   | |    | | |
+|     / /_\ \    | |          / /_\ \    | |________/ /    / /_\ \    | |____/ /   | |____| | |
+|    / _____ \   | |         / _____ \   |  _______  /    / _____ \   |  _____  \  |______  | |
+|   / /     \ \  | |______  / /     \ \  | |       \ \   / /     \ \  | |____/  / ________| | |
+|  /_/       \_\ |_______/ /_/       \_\ |_|        \_\ /_/       \_\ |________/  \_________| |
+|                                                                                             |
+|=============================================================================================|
+|==================================== https://alaraby.dev ====================================|
+|=============================================================================================|
+Website Name:         Kafiil
+URL:          https://Kafiil.alaraby.dev
+Description:        Mahmoud Araby's Kafiil Front-end Task
+Version:            1.0.0
+Author:             Mahmoud Araby
+Author URL:         https://alaraby.dev
+-->
+
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>KAF - كــاف</title>
+	<link rel="stylesheet" href="./css/app.css" />
+</head>
+
+<body>
+	<!-- ============================================= Start Header ============================================ -->
+	<header class="app-header">
+		<div class="container">
+			<navbar class="navbar">
+				<div class="brand">
+					<img src="./assets/logo.svg" alt="" />
+				</div>
+				<ul class="menu">
+					<li>
+						<img src="./assets/icons/cart.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المزادات</div>
+					</li>
+					<li>
+						<img src="./assets/icons/trophy.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المسابقات</div>
+					</li>
+					<li>
+						<img src="./assets/icons/briefcase.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المشروع</div>
+					</li>
+					<li>
+						<img src="./assets/icons/image.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المحافظ</div>
+					</li>
+					<li>
+						<img src="./assets/icons/userThree.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المستقلين</div>
+					</li>
+					<li>
+						<img src="./assets/icons/chats.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المنتدى</div>
+					</li>
+				</ul>
+				<ul class="options">
+					<li>
+						<img src="./assets/icons/chatCirclesDots.svg" alt="" class="menu-icon" />
+					</li>
+					<li>
+						<img src="./assets/icons/bell.svg" alt="" class="menu-icon" />
+					</li>
+					<li>
+						<img src="./assets/icons/avatar.svg" alt="" class="avatar dropdown-toggle" />
+						<ul class="dropdown shadow dropdown-content">
+							<li class="dropdown-item dropdown-avatar">
+								<img src="./assets/icons/avatar.svg" alt="" class="avatar" />
+								<div class="user-name">
+									<span>أحمد علي</span>
+									<div class="role">طالب</div>
+								</div>
+							</li>
+							<li class="dropdown-item">
+								<img src="./assets/icons/userCircle.svg" alt="" />
+								<span class="menu-title">الملف الشخصي</span>
+							</li>
+							<li class="dropdown-item">
+								<img src="./assets/icons/moon.svg" alt="" />
+								<div class="flex f-sb align-center">
+									<div class="menu-title">الوضع الداكن</div>
+									<div class="dark-mode-switch">
+										<input type="checkbox" id="dark-mode-toggle" />
+										<label for="dark-mode-toggle"></label>
+									</div>
+								</div>
+							</li>
+							<li class="dropdown-item">
+								<img src="./assets/icons/lang.svg" alt="" />
+								<div class="flex f-sb">
+									<div class="menu-title">اللغة</div>
+									<a href="/index.html" class="menu-title">
+										<span>English</span>
+										<span><img width="20" src="./assets/icons/en-flag.svg" alt="ar" /></span>
+									</a>
+								</div>
+							</li>
+							<li class="dropdown-item">
+								<img src="./assets/icons/gear.svg" alt="" />
+								<span class="menu-title">إعدادات الحساب</span>
+							</li>
+							<li class="dropdown-item logout">
+								<img src="./assets/icons/logout.svg" alt="" />
+								<span class="menu-title">تسجيل الخروج</span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="toggle-btn" id="toggle-sidebar">
+							<span></span>
+							<span></span>
+						</div>
+					</li>
+				</ul>
+			</navbar>
+			<!-- ============================================= Mobile Menu ============================================= -->
+			<div class="mobile-navbar">
+				<ul class="options">
+					<div class="flex f-sb">
+						<div class="brand">
+							<img src="./assets/logo.svg" alt="" />
+						</div>
+						<img src="./assets/icons/avatar.svg" alt="" class="avatar dropdown-toggle" />
+					</div>
+				</ul>
+				<ul class="menu">
+					<li>
+						<img src="./assets/icons/cart.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المزادات</div>
+					</li>
+					<li>
+						<img src="./assets/icons/trophy.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المسابقات</div>
+					</li>
+					<li>
+						<img src="./assets/icons/briefcase.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المشروع</div>
+					</li>
+					<li>
+						<img src="./assets/icons/image.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المحافظ</div>
+					</li>
+					<li>
+						<img src="./assets/icons/userThree.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المستقلين</div>
+					</li>
+					<li>
+						<img src="./assets/icons/chats.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">المنتدى</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ============================================= Mobile Menu ============================================= -->
+		</div>
+	</header>
+
+	<!-- ============================================= End Header ============================================= -->
+
+	<div class="container">
+		<div class="app-main">
+			<!-- =========================================== Start Content =========================================== -->
+			<div class="app-content">
+				<div class="header-contact">
+					<h1>التصميم / تصميم الشعار</h1>
+					<p>
+						لوريم ايبسوم دولور سيت امت، كونسيكتيتور أديبيسسينغ ايليت. ديام
+						نيسي، كراس نيكو لوريم ايبسوم دولور سيت امت،
+					</p>
+				</div>
+
+				<!--================== RateStars =====================-->
+				<div class="rate-section-container">
+					<div class="rate-stars-and-percent">
+						<div class="rate-stars">
+							<img src="./assets/star-FILLED.svg" alt="" />
+							<img src="./assets/star-FILLED.svg" alt="" />
+							<img src="./assets/star-FILLED.svg" alt="" />
+							<img src="./assets/star-FILLED.svg" alt="" />
+							<img src="./assets/star.svg" alt="" />
+						</div>
+
+						<div class="rate-percent">
+							<p>4.1(500)</p>
+						</div>
+					</div>
+					<!--================ RateLinksAndLike ===================-->
+
+					<div class="link-like">
+						<img src="./assets/share.svg" alt="" />
+						<img class="heart cp" src="./assets/heartLike.svg" alt="" />
+					</div>
+				</div>
+				<!--================ End RateLinksAndLike ===================-->
+				<!--================== End RateStars =====================-->
+
+				<!--================ Slide Carousel ==============-->
+				<div class="app-slider">
+					<div class="slider-container">
+						<div class="slider">
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 1" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 2" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 3" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 4" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 5" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 6" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 7" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 8" />
+							</div>
+							<!-- Add more slides as needed -->
+						</div>
+					</div>
+
+					<button class="prev">
+						<img src="./assets/leftArrow.svg" alt="" />
+					</button>
+					<button class="next">
+						<img src="./assets/rightArrow.svg" alt="" />
+					</button>
+				</div>
+
+				<!--================ End Slide Carousel ==============-->
+
+				<!--================ Descirption Section ==============-->
+
+				<div class="Descirption-section-container">
+					<h1>الوصف</h1>
+					<p class="card">
+						لوريم ايبسوم دولور سيت امت، كونسيكتيتور أديبيسسينغ ايليت. ديام
+						نيسي، كراس نيكو لوريم ايبسوم دولور سيت امت، لوريم ايبسوم دولور
+						سيت امت، كونسيكتيتور أديبيسسينغ ايليت. ديام نيسي، كراس نيكو لوريم
+						ايبسوم دولور سيت امت، لوريم ايبسوم دولور سيت ا
+					</p>
+				</div>
+
+				<!--================ End Descirption Section ==============-->
+
+				<!--================ Start Service Add-Ons ==============-->
+				<div class="Service-Add-Ons-container">
+					<div class="service-add-selection-header">
+						<h1 class="sevice-add-header">الخدمات الإضافية</h1>
+						<div class="select-all">
+							<img src="./assets/checkAll.svg" alt="" />
+							<h2>تحديد الكل</h2>
+						</div>
+					</div>
+
+					<!-- =============Service Add Card 1 ================ -->
+					<div class="sevice-add-price-details card">
+						<div class="service-add">
+							<img class="checked" src="./assets/check.svg" alt="" />
+							<p>
+								لوريم ايبسوم دولور سيت امت، كونسيكتيتور أديبيسسينغ ايليت. ديام
+								نيسي، كراس نيكو لوريم ايبسوم دولور سيت امت، لوريم ايبسوم دولور
+								سيت امت.
+							</p>
+						</div>
+						<div class="serviec-price">
+							<p>$100</p>
+							<p>2 أيام</p>
+						</div>
+					</div>
+					<!-- =============Service Add Card 2 ================ -->
+
+					<div class="sevice-add-price-details card">
+						<div class="service-add">
+							<img src="./assets/emptyCheck.svg" alt="" />
+							<p>
+								لوريم ايبسوم دولور سيت امت، كونسيكتيتور أديبيسسينغ ايليت. ديام
+								نيسي، كراس نيكو لوريم ايبسوم دولور سيت امت، لوريم ايبسوم دولور
+								سيت امت.
+							</p>
+						</div>
+						<div class="serviec-price">
+							<p>$100</p>
+							<p>2 أيام</p>
+						</div>
+					</div>
+					<!-- =============Service Add Card 3 ================ -->
+
+					<div class="sevice-add-price-details card">
+						<div class="service-add">
+							<img src="./assets/emptyCheck.svg" alt="" />
+							<p>
+								لوريم ايبسوم دولور سيت امت، كونسيكتيتور أديبيسسينغ ايليت. ديام
+								نيسي، كراس نيكو لوريم ايبسوم دولور سيت امت، لوريم ايبسوم دولور
+								سيت امت.
+							</p>
+						</div>
+						<div class="serviec-price">
+							<p>$100</p>
+							<p>2 أيام</p>
+						</div>
+					</div>
+					<!-- ============= End Service Add Card ================ -->
+				</div>
+
+				<!-- ============= Start Purchase Service ================ -->
+				<div class="PurchaseService-container">
+					<h1>شراء الخدمة</h1>
+
+					<div class="purchase-service-section card">
+						<div class="increase-and-decrease">
+							<img id="decrease" src="./assets/decrease.svg" alt="" />
+							<h3 id="count">3</h3>
+							<img id="increase" src="./assets/increase.svg" alt="" />
+						</div>
+						<div id="price" class="price-of-service">$300</div>
+						<div class="service-price-details">
+							<button class="btn-primary purchase-btn">شراء</button>
+						</div>
+					</div>
+				</div>
+				<!-- ============= End Purchase Service ================ -->
+
+
+				<!--================ End Service Add-Ons ==============-->
+
+				<!--============================================ Start Service Rate =====================================-->
+				<div class="service-rate">
+					<div class="service-rate-header">
+						<img src="./assets/star-filled.svg" alt="" />
+						<h1>4.6 تقييم الخدمة . <span>46 تقييمًا</span></h1>
+					</div>
+
+					<div class="about-rate-container card">
+						<!--=========================== rate line 1 =========================-->
+						<div class="line-rate-container">
+							<div class="type-of-rate-container">
+								<h3>جودة العمل</h3>
+								<div>
+									<img src="./assets/star-filled.svg" alt="" />
+									<span>5.0</span>
+								</div>
+							</div>
+
+							<div class="rate-stars-container work-quality rate" data-rate="0">
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+							</div>
+
+							<div class="rate-bar">
+								<div class="rate-line"></div>
+							</div>
+
+							<div class="rate-number">
+								<h3>4</h3>
+							</div>
+						</div>
+
+						<!--=========================== rate line 2 =========================-->
+						<div class="line-rate-container">
+							<div class="type-of-rate-container">
+								<h3>التواصل والتعاون</h3>
+								<div>
+									<img src="./assets/star-filled.svg" alt="" />
+									<span>5.0</span>
+								</div>
+							</div>
+
+							<div class="rate-stars-container communication-collaboration" data-rate="2">
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+							</div>
+
+							<div class="rate-bar">
+								<div class="rate-line"></div>
+							</div>
+
+							<div class="rate-number">
+								<h3>4</h3>
+							</div>
+						</div>
+						<!--=========================== rate line 3 =========================-->
+						<div class="line-rate-container">
+							<div class="type-of-rate-container">
+								<h3>الالتزام بالجدول الزمني</h3>
+								<div>
+									<img src="./assets/star-filled.svg" alt="" />
+									<span>5.0</span>
+								</div>
+							</div>
+
+							<div class="rate-stars-container adherence-schedule rate" data-rate="0">
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+							</div>
+
+							<div class="rate-bar">
+								<div class="rate-line"></div>
+							</div>
+
+							<div class="rate-number">
+								<h3>4</h3>
+							</div>
+						</div>
+						<!--=========================== End rate lines =========================-->
+					</div>
+				</div>
+				<!--============================================ End Service Rate =====================================-->
+
+				<!-- ======================================= Start Comments Rate ======================================= -->
+				<div class="client-rate-container card">
+					<div class="comments">
+					</div>
+					<div class="add-comment">
+						<img src="./assets/icons/avatar.svg" alt="" />
+						<textarea id="comment-value" class="comment-input" placeholder="اكتب مراجعتك هنا"></textarea>
+					</div>
+					<div class="post-btn">
+						<button class="btn-primary post-review">نشر المراجعة</button>
+					</div>
+				</div>
+				<!-- ======================================= End Comments Rate ======================================= -->
+
+			</div>
+			<!-- =========================================== End Content =========================================== -->
+
+			<!-- =========================================== Start SideBar ========================================= -->
+			<div class="app-sidebar">
+				<div class="contact-datails-container card my-2">
+					<div class="seller-info">
+						<p class="header">البائع</p>
+						<div class="seller-avatar">
+							<img src="./assets/client.jpeg" alt="" />
+							<div class="online-mark"></div>
+						</div>
+						<h3 class="seller-name">
+							<span>جين سميث</span>
+							<img src="./assets/icons/sealCheck.svg" alt="" class="seal-check" />
+						</h3>
+
+						<div class="contact-type">
+							<div class="icon">
+								<img src="./assets/certificate.svg" alt="" />
+							</div>
+							<div class="icon">
+								<img src="./assets/Login.svg" alt="" />
+							</div>
+							<div class="icon">
+								<img src="./assets/ID.svg" alt="" />
+							</div>
+						</div>
+						<p>
+							لوريم ايبسوم دولور سيت امت، كونسيكتيتور أديبيسسينغ ايليت. ديام
+							لوريم ايبسوم دولور سيت امت..
+						</p>
+
+						<button class="contact-btn">اتصل بي</button>
+					</div>
+				</div>
+
+				<!--================================ Info Details =================================-->
+				<div class="info card my-2">
+					<h3 class="info-header">المعلومات</h3>
+					<div class="info-details-section">
+						<div id="info-details-container" class="Info-price">
+							<div id="info-details" class="price-detail">
+								<img src="./assets/price.svg" alt="" />
+								<h4>السعر</h4>
+							</div>
+							<div class="detail-of-info">
+								<h3>$10</h3>
+							</div>
+						</div>
+						<div class="Info-Delivery-Duration">
+							<div id="info-details-container" class="Info-price">
+								<div id="info-details" class="price-detail">
+									<img src="./assets/deliverTime.svg" alt="" />
+									<h4>مدة التسليم</h4>
+								</div>
+								<div class="detail-of-info">
+									<h3>يوم واحد</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="Info-In-Progress-Orders">
+							<div id="info-details-container" class="Info-price">
+								<div id="info-details" class="price-detail">
+									<img src="./assets/cartProcss.svg" alt="" />
+									<h4>الطلبات قيد التقدم</h4>
+								</div>
+								<div class="detail-of-info">
+									<h3>2</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="Info-Customers">
+							<div id="info-details-container" class="Info-price">
+								<div id="info-details" class="price-detail">
+									<img src="./assets/Customers.svg" alt="" />
+									<h4>العملاء</h4>
+								</div>
+								<div class="detail-of-info">
+									<h3>2</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--================================ End Info Details =================================-->
+
+				<!--================================ Other Services =================================-->
+				<div class="SellerOtherServiecs my-2">
+					<div class="header-seller-other-serviecs">
+						<h3>خدمات أخرى من البائع</h3>
+						<p>عرض المزيد</p>
+					</div>
+
+					<div class="other-services-container">
+						<!--=========================== Other Services Card 1 ==========================-->
+						<div class="other-services card p-0">
+							<img class="other-services-img" src="./assets/SuggestedServiecs.png" alt="">
+							<div class="other-services-details">
+								<p class="other-text">لوريم ايبسوم دولور سيت اميت، كونسيكتيتور أديبيسينغ ايليت...</p>
+								<div class="rate-and-price-other-serviecs">
+
+									<div class="rate-and-price">
+										<div class="rate-others">
+											<img class="heart cp" src="./assets/star.svg" alt="">
+											<p>4.9 (50)</p>
+										</div>
+										<div class="price-others">
+											<img class="heart cp" src="./assets/priceTag.svg" alt="">
+											<p>$10</p>
+										</div>
+									</div>
+									<div class="like-others">
+										<img class="heart cp" src="./assets/heartLike.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--=========================== Other Services Card 2 ==========================-->
+						<div class="other-services card p-0">
+							<img class="other-services-img" src="./assets/SuggestedServiecs.png" alt="">
+							<div class="other-services-details">
+								<p class="other-text">لوريم ايبسوم دولور سيت اميت، كونسيكتيتور أديبيسينغ ايليت...</p>
+								<div class="rate-and-price-other-serviecs">
+
+									<div class="rate-and-price">
+										<div class="rate-others">
+											<img src="./assets/star.svg" alt="">
+											<p>4.9 (50)</p>
+										</div>
+										<div class="price-others">
+											<img src="./assets/priceTag.svg" alt="">
+											<p>$10</p>
+										</div>
+									</div>
+
+									<div class="like-others">
+										<img class="heart cp liked" src="./assets/redHeartLike.svg" alt="">
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!--=========================== Other Services Card 3 ==========================-->
+						<div class="other-services card p-0">
+							<img class="other-services-img" src="./assets/SuggestedServiecs.png" alt="">
+							<div class="other-services-details">
+								<p class="other-text">لوريم ايبسوم دولور سيت اميت، كونسيكتيتور أديبيسينغ ايليت...</p>
+								<div class="rate-and-price-other-serviecs">
+
+									<div class="rate-and-price">
+										<div class="rate-others">
+											<img src="./assets/star.svg" alt="">
+											<p>4.9 (50)</p>
+										</div>
+										<div class="price-others">
+											<img src="./assets/priceTag.svg" alt="">
+											<p>$10</p>
+										</div>
+									</div>
+
+									<div class="like-others">
+										<img class="heart cp" src="./assets/heartLike.svg" alt="">
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--================================ End Other Services =================================-->
+			</div>
+			<!-- =========================================== End SideBar ========================================= -->
+		</div>
+	</div>
+
+
+	<!-- ============================================= Suggested Serviecs ============================================ -->
+	<div id="servies-cards-container" class="container">
+		<h1 class="service-header-text">الخدمات المقترحة</h1>
+		<div class="serviecs-section-container">
+			<!-- ========================= Card 1 =============================== -->
+			<div class="service-card">
+				<div class="heart-like-container">
+					<img class="heart cp" src="./assets/heartLike.svg" alt="" />
+				</div>
+				<img class="card-img" src="./assets/SuggestedServiecs.png" alt="" />
+				<p class="service-details">
+					لوريم ايبسوم دولور سيت اميت، كونسيكتيتور أديبيسينغ ايليت...
+				</p>
+				<div class="serviecs-icons">
+					<div class="star">
+						<img src="./assets/star-filled.svg" alt="" />
+						<p>4.9</p>
+					</div>
+					<div class="vector">
+						<img src="./assets/vector.svg" alt="" />
+						<p>300</p>
+					</div>
+				</div>
+				<div class="serviecs-client">
+					<div>
+						<img src="./assets/client.jpeg" alt="" />
+						<p>جين سميث</p>
+					</div>
+
+					<div class="serviecs-cost-and-client">
+						<img src="./assets/priceTag.svg" alt="" />
+						<p>10$</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- ========================= Card 2 =============================== -->
+			<div class="service-card">
+				<div class="heart-like-container">
+					<img class="heart cp" src="./assets/heartLike.svg" alt="" />
+				</div>
+				<img class="card-img" src="./assets/SuggestedServiecs.png" alt="" />
+				<p class="service-details">
+					لوريم ايبسوم دولور سيت اميت، كونسيكتيتور أديبيسينغ ايليت...
+				</p>
+				<div class="serviecs-icons">
+					<div class="star">
+						<img src="./assets/star-filled.svg" alt="" />
+						<p>4.9</p>
+					</div>
+					<div class="vector">
+						<img src="./assets/vector.svg" alt="" />
+						<p>300</p>
+					</div>
+				</div>
+				<div class="serviecs-client">
+					<div>
+						<img src="./assets/client.jpeg" alt="" />
+						<p>جين سميث</p>
+					</div>
+
+					<div class="serviecs-cost-and-client">
+						<img src="./assets/priceTag.svg" alt="" />
+						<p>10$</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- ========================= Card 3 =============================== -->
+
+			<div class="service-card">
+				<div class="heart-like-container">
+					<img class="heart cp" src="./assets/heartLike.svg" alt="" />
+				</div>
+				<img class="card-img" src="./assets/SuggestedServiecs.png" alt="" />
+				<p class="service-details">
+					لوريم ايبسوم دولور سيت اميت، كونسيكتيتور أديبيسينغ ايليت...
+				</p>
+				<div class="serviecs-icons">
+					<div class="star">
+						<img src="./assets/star-filled.svg" alt="" />
+						<p>4.9</p>
+					</div>
+					<div class="vector">
+						<img src="./assets/vector.svg" alt="" />
+						<p>300</p>
+					</div>
+				</div>
+				<div class="serviecs-client">
+					<div>
+						<img src="./assets/client.jpeg" alt="" />
+						<p>جين سميث</p>
+					</div>
+
+					<div class="serviecs-cost-and-client">
+						<img src="./assets/priceTag.svg" alt="" />
+						<p>10$</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- ========================= Card 4 =============================== -->
+
+			<div class="service-card">
+				<div class="heart-like-container">
+					<img class="heart cp" src="./assets/redHeartLike.svg" alt="" />
+				</div>
+				<img class="card-img" src="./assets/SuggestedServiecs.png" alt="" />
+				<p class="service-details">
+					لوريم ايبسوم دولور سيت اميت، كونسيكتيتور أديبيسينغ ايليت...
+				</p>
+				<div class="serviecs-icons">
+					<div class="star">
+						<img src="./assets/star-filled.svg" alt="" />
+						<p>4.9</p>
+					</div>
+					<div class="vector">
+						<img src="./assets/vector.svg" alt="" />
+						<p>300</p>
+					</div>
+				</div>
+				<div class="serviecs-client">
+					<div>
+						<img src="./assets/client.jpeg" alt="" />
+						<p>جين سميث</p>
+					</div>
+
+					<div class="serviecs-cost-and-client">
+						<img src="./assets/priceTag.svg" alt="" />
+						<p>10$</p>
+					</div>
+				</div>
+			</div>
+			<!-- ========================= End Of Cards =============================== -->
+		</div>
+	</div>
+
+	<!-- ============================================= End Suggested Serviecs ============================================ -->
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>

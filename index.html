@@ -1,0 +1,825 @@
+<!--
+|=============================================================================================|
+|        _        _              _        ___________         _        _______      _      _  |
+|       / \      | |            / \      |  ________ \       / \      |  ____ \    | |    | | |
+|      / ^ \     | |           / ^ \     | |        \ \     / ^ \     | |    \ \   | |    | | |
+|     / /_\ \    | |          / /_\ \    | |________/ /    / /_\ \    | |____/ /   | |____| | |
+|    / _____ \   | |         / _____ \   |  _______  /    / _____ \   |  _____  \  |______  | |
+|   / /     \ \  | |______  / /     \ \  | |       \ \   / /     \ \  | |____/  / ________| | |
+|  /_/       \_\ |_______/ /_/       \_\ |_|        \_\ /_/       \_\ |________/  \_________| |
+|                                                                                             |
+|=============================================================================================|
+|==================================== https://alaraby.dev ====================================|
+|=============================================================================================|
+Website Name:         Kafiil
+URL:          https://Kafiil.alaraby.dev
+Description:        Mahmoud Araby's Kafiil Front-end Task
+Version:            1.0.0
+Author:             Mahmoud Araby
+Author URL:         https://alaraby.dev
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>KAF - كــاف</title>
+	<link rel="stylesheet" href="./css/app.css" />
+</head>
+
+<body>
+	<!-- ============================================= Start Header ============================================ -->
+	<header class="app-header">
+		<div class="container">
+			<navbar class="navbar">
+				<div class="brand">
+					<img src="./assets/logo.svg" alt="" />
+				</div>
+				<ul class="menu">
+					<li>
+						<img src="./assets/icons/cart.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Auctions</div>
+					</li>
+					<li>
+						<img src="./assets/icons/trophy.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Contests</div>
+					</li>
+					<li>
+						<img src="./assets/icons/briefcase.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Project</div>
+					</li>
+					<li>
+						<img src="./assets/icons/image.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Portfolios</div>
+					</li>
+					<li>
+						<img src="./assets/icons/userThree.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Freelancers</div>
+					</li>
+					<li>
+						<img src="./assets/icons/chats.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Forum</div>
+					</li>
+				</ul>
+				<ul class="options">
+					<li>
+						<img src="./assets/icons/chatCirclesDots.svg" alt="" class="menu-icon" />
+					</li>
+					<li>
+						<img src="./assets/icons/bell.svg" alt="" class="menu-icon" />
+					</li>
+					<li>
+						<img src="./assets/icons/avatar.svg" alt="" class="avatar dropdown-toggle" />
+						<ul class="dropdown shadow dropdown-content">
+							<li class="dropdown-item dropdown-avatar">
+								<img src="./assets/icons/avatar.svg" alt="" class="avatar" />
+								<div class="user-name">
+									<span>Ahmed Ali</span>
+									<div class="role">Student</div>
+								</div>
+							</li>
+							<li class="dropdown-item">
+								<img src="./assets/icons/userCircle.svg" alt="" />
+								<span class="menu-title">My Profile</span>
+							</li>
+							<li class="dropdown-item">
+								<img src="./assets/icons/moon.svg" alt="" />
+								<div class="flex f-sb align-center">
+									<div class="menu-title">Dark Mode</div>
+									<div class="dark-mode-switch">
+										<input type="checkbox" id="dark-mode-toggle" />
+										<label for="dark-mode-toggle"></label>
+									</div>
+								</div>
+							</li>
+							<li class="dropdown-item">
+								<img src="./assets/icons/lang.svg" alt="" />
+								<div class="flex f-sb">
+									<div class="menu-title">Language</div>
+									<a href="./ar-index.html" class="menu-title">
+										<span>العربية</span>
+										<span><img width="20" src="./assets/icons/ar-flag.svg" alt="ar" /></span>
+									</a>
+								</div>
+							</li>
+							<li class="dropdown-item">
+								<img src="./assets/icons/gear.svg" alt="" />
+								<span class="menu-title">Account Settings</span>
+							</li>
+							<li class="dropdown-item logout">
+								<img src="./assets/icons/logout.svg" alt="" />
+								<span class="menu-title">Logout</span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="toggle-btn" id="toggle-sidebar">
+							<span></span>
+							<span></span>
+						</div>
+					</li>
+				</ul>
+			</navbar>
+			<!-- ============================================= Mobile Menu ============================================= -->
+			<div class="mobile-navbar">
+				<ul class="options">
+					<div class="flex f-sb">
+						<div class="brand">
+							<img src="./assets/logo.svg" alt="" />
+						</div>
+						<img src="./assets/icons/avatar.svg" alt="" class="avatar dropdown-toggle" />
+					</div>
+				</ul>
+				<ul class="menu">
+					<li>
+						<img src="./assets/icons/cart.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Auctions</div>
+					</li>
+					<li>
+						<img src="./assets/icons/trophy.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Contests</div>
+					</li>
+					<li>
+						<img src="./assets/icons/briefcase.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Project</div>
+					</li>
+					<li>
+						<img src="./assets/icons/image.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Portfolios</div>
+					</li>
+					<li>
+						<img src="./assets/icons/userThree.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Freelancers</div>
+					</li>
+					<li>
+						<img src="./assets/icons/chats.svg" alt="" class="menu-icon" />
+						<div class="menu-item-title">Forum</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ============================================= Mobile Menu ============================================= -->
+
+
+
+		</div>
+
+	</header>
+	<!-- ============================================= End Header ============================================= -->
+
+	<div class="container">
+		<div class="app-main">
+			<!-- =========================================== Start Content =========================================== -->
+			<div class="app-content">
+				<div class="header-contact">
+					<h1>Design / Logo Design</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+						nisi, cras neque Lorem ipsum dolor sit amet,
+					</p>
+				</div>
+
+				<!--================== RateStars =====================-->
+				<div class="rate-section-container">
+					<div class="rate-stars-and-percent">
+						<div class="rate-stars">
+							<img src="./assets/star-FILLED.svg" alt="" />
+							<img src="./assets/star-FILLED.svg" alt="" />
+							<img src="./assets/star-FILLED.svg" alt="" />
+							<img src="./assets/star-FILLED.svg" alt="" />
+							<img src="./assets/star.svg" alt="" />
+						</div>
+
+						<div class="rate-percent">
+							<p>4.1(500)</p>
+						</div>
+					</div>
+					<!--================ RateLinksAndLike ===================-->
+
+					<div class="link-like">
+						<img src="./assets/share.svg" alt="" />
+						<img class="heart cp" src="./assets/heartLike.svg" alt="" />
+					</div>
+				</div>
+				<!--================ End RateLinksAndLike ===================-->
+				<!--================== End RateStars =====================-->
+
+				<!--================ Slide Carousel ==============-->
+				<div class="app-slider">
+					<div class="slider-container">
+						<div class="slider">
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 1" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 2" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 3" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 4" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 5" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 6" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 7" />
+							</div>
+							<div class="slide">
+								<img src="./assets/SuggestedServiecs.png" alt="Slide 8" />
+							</div>
+							<!-- Add more slides as needed -->
+						</div>
+					</div>
+
+					<button class="prev">
+						<img src="./assets/leftArrow.svg" alt="" />
+					</button>
+					<button class="next">
+						<img src="./assets/rightArrow.svg" alt="" />
+					</button>
+				</div>
+
+				<!--================ End Slide Carousel ==============-->
+
+				<!--================ Descirption Section ==============-->
+
+				<div class="Descirption-section-container">
+					<h1>Description</h1>
+					<p class="card">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+						nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+						amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem
+						ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,
+						Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum
+						dolor sit amet.
+					</p>
+				</div>
+
+				<!--================ End Descirption Section ==============-->
+
+				<!--================ Start Service Add-Ons ==============-->
+				<div class="Service-Add-Ons-container">
+					<div class="service-add-selection-header">
+						<h1 class="sevice-add-header">Service Add-Ons</h1>
+						<div class="select-all">
+							<img src="./assets/checkAll.svg" alt="" />
+							<h2>Select All</h2>
+						</div>
+					</div>
+
+					<!-- =============Service Add Card 1 ================ -->
+					<div class="sevice-add-price-details card">
+						<div class="service-add">
+							<img class="checked" src="./assets/check.svg" alt="" />
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+								nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor
+								sit amet.
+							</p>
+						</div>
+						<div class="serviec-price">
+							<p>$100</p>
+							<p>2 days</p>
+						</div>
+					</div>
+					<!-- =============Service Add Card 2 ================ -->
+
+					<div class="sevice-add-price-details card">
+						<div class="service-add">
+							<img src="./assets/emptyCheck.svg" alt="" />
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+								nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor
+								sit amet.
+							</p>
+						</div>
+						<div class="serviec-price">
+							<p>$100</p>
+							<p>2 days</p>
+						</div>
+					</div>
+					<!-- =============Service Add Card 3 ================ -->
+
+					<div class="sevice-add-price-details card">
+						<div class="service-add">
+							<img src="./assets/emptyCheck.svg" alt="" />
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+								nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor
+								sit amet.
+							</p>
+						</div>
+						<div class="serviec-price">
+							<p>$100</p>
+							<p>2 days</p>
+						</div>
+					</div>
+					<!-- ============= End Service Add Card ================ -->
+				</div>
+
+				<!-- ============= Start Purchase Service ================ -->
+				<div class="PurchaseService-container">
+					<h1>Purchase Service</h1>
+
+					<div class="purchase-service-section card">
+						<div class="increase-and-decrease">
+							<img id="decrease" src="./assets/decrease.svg" alt="" />
+							<h3 id="count">3</h3>
+							<img id="increase" src="./assets/increase.svg" alt="" />
+						</div>
+						<div id="price" class="price-of-service">$300</div>
+						<div class="service-price-details">
+							<button class="btn-primary purchase-btn">Purchase</button>
+						</div>
+					</div>
+				</div>
+				<!-- ============= End Purchase Service ================ -->
+
+
+				<!--================ End Service Add-Ons ==============-->
+
+				<!--============================================ Start Service Rate =====================================-->
+				<div class="service-rate">
+					<div class="service-rate-header">
+						<img src="./assets/star-filled.svg" alt="" />
+						<h1>4.6 Service Rating . <span>46 Rateings</span></h1>
+					</div>
+
+					<div class="about-rate-container card">
+						<!--=========================== rate line 1 =========================-->
+						<div class="line-rate-container">
+							<div class="type-of-rate-container">
+								<h3>Work Quality</h3>
+								<div>
+									<img src="./assets/star-filled.svg" alt="" />
+									<span>5.0</span>
+								</div>
+							</div>
+
+							<div class="rate-stars-container work-quality rate" data-rate="0">
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+							</div>
+
+							<div class="rate-bar">
+								<div class="rate-line"></div>
+							</div>
+
+							<div class="rate-number">
+								<h3>4</h3>
+							</div>
+						</div>
+
+						<!--=========================== rate line 2 =========================-->
+						<div class="line-rate-container">
+							<div class="type-of-rate-container">
+								<h3>Communication & Collaboration</h3>
+								<div>
+									<img src="./assets/star-filled.svg" alt="" />
+									<span>5.0</span>
+								</div>
+							</div>
+
+							<div class="rate-stars-container communication-collaboration" data-rate="2">
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+							</div>
+
+							<div class="rate-bar">
+								<div class="rate-line"></div>
+							</div>
+
+							<div class="rate-number">
+								<h3>4</h3>
+							</div>
+						</div>
+						<!--=========================== rate line 3 =========================-->
+						<div class="line-rate-container">
+							<div class="type-of-rate-container">
+								<h3>Adherence to Schedule</h3>
+								<div>
+									<img src="./assets/star-filled.svg" alt="" />
+									<span>5.0</span>
+								</div>
+							</div>
+
+							<div class="rate-stars-container adherence-schedule rate" data-rate="0">
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+								<img src="./assets/star.svg" alt="" />
+							</div>
+
+							<div class="rate-bar">
+								<div class="rate-line"></div>
+							</div>
+
+							<div class="rate-number">
+								<h3>4</h3>
+							</div>
+						</div>
+						<!--=========================== End rate lines =========================-->
+					</div>
+				</div>
+				<!--============================================ End Service Rate =====================================-->
+
+				<!-- ======================================= Start Comments Rate ======================================= -->
+				<div class="client-rate-container card">
+					<div class="comments">
+					</div>
+					<div class="add-comment">
+						<img src="./assets/icons/avatar.svg" alt="" />
+						<textarea id="comment-value" class="comment-input" placeholder="Write your review in here"></textarea>
+					</div>
+					<div class="post-btn">
+						<button class="btn-primary post-review">Post Review</button>
+					</div>
+				</div>
+				<!-- ======================================= End Comments Rate ======================================= -->
+
+			</div>
+			<!-- =========================================== End Content =========================================== -->
+
+			<!-- =========================================== Start SideBar ========================================= -->
+			<div class="app-sidebar">
+				<div class="contact-datails-container card my-2">
+					<div class="seller-info">
+						<p class="header">Seller</p>
+						<div class="seller-avatar">
+							<img src="./assets/client.jpeg" alt="" />
+							<div class="online-mark"></div>
+						</div>
+						<h3 class="seller-name">
+							<span>Jane Smith</span>
+							<img src="./assets/icons/sealCheck.svg" alt="" class="seal-check" />
+						</h3>
+
+						<div class="contact-type">
+							<div class="icon">
+								<img src="./assets/certificate.svg" alt="" />
+							</div>
+							<div class="icon">
+								<img src="./assets/Login.svg" alt="" />
+							</div>
+							<div class="icon">
+								<img src="./assets/ID.svg" alt="" />
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+							Lorem ipsum dolor sit amet..
+						</p>
+
+						<button class="contact-btn">Contact Me</button>
+					</div>
+				</div>
+
+				<!--================================ Info Details =================================-->
+				<div class="info card my-2">
+					<h3 class="info-header">Info</h3>
+					<div class="info-details-section">
+						<div id="info-details-container" class="Info-price">
+							<div id="info-details" class="price-detail">
+								<img src="./assets/price.svg" alt="" />
+								<h4>Price</h4>
+							</div>
+							<div class="detail-of-info">
+								<h3>$10</h3>
+							</div>
+						</div>
+						<div class="Info-Delivery-Duration">
+							<div id="info-details-container" class="Info-price">
+								<div id="info-details" class="price-detail">
+									<img src="./assets/deliverTime.svg" alt="" />
+									<h4>Delivery Duration</h4>
+								</div>
+								<div class="detail-of-info">
+									<h3>1 Day</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="Info-In-Progress-Orders">
+							<div id="info-details-container" class="Info-price">
+								<div id="info-details" class="price-detail">
+									<img src="./assets/cartProcss.svg" alt="" />
+									<h4>In Progress Orders</h4>
+								</div>
+								<div class="detail-of-info">
+									<h3>2</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="Info-Customers">
+							<div id="info-details-container" class="Info-price">
+								<div id="info-details" class="price-detail">
+									<img src="./assets/Customers.svg" alt="" />
+									<h4>Customers</h4>
+								</div>
+								<div class="detail-of-info">
+									<h3>2</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="Info-Sales">
+							<div id="info-details-container" class="Info-price">
+								<div id="info-details" class="price-detail">
+									<img src="./assets/sales.svg" alt="" />
+									<h4>Sales</h4>
+								</div>
+								<div class="detail-of-info">
+									<h3>$25</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="Info-Category">
+							<div id="info-details-container" class="Info-price">
+								<div id="info-details" class="price-detail">
+									<img src="./assets/Category.svg" alt="" />
+									<h4>Category</h4>
+								</div>
+								<div class="detail-of-info">
+									<h3>Design</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="Info-Subcategory">
+							<div id="info-details-container" class="Info-price">
+								<div id="info-details" class="price-detail">
+									<img src="./assets/Category.svg" alt="" />
+									<h4>Subcategory</h4>
+								</div>
+								<div class="detail-of-info">
+									<h3>Logo Design</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--================================ End Info Details =================================-->
+
+				<!--================================ Start Share Link =================================-->
+				<div class="share-links-container card my-2">
+					<h2>Share & Earn</h2>
+					<div class="share-links f-sb">
+						<img class="linkedin" src="./assets/linkedin.svg" alt="" />
+						<img class="facebook" src="./assets/facebook.svg" alt="" />
+						<img class="whatsApp" src="./assets/what'sapp.svg" alt="" />
+						<img class="twitter" src="./assets/twitter.svg" alt="" />
+						<img class="copy" src="./assets/copy.svg" alt="" />
+					</div>
+				</div>
+				<!--================================ End Share Link =================================-->
+
+
+				<div class="SellerOtherServiecs my-2">
+					<div class="header-seller-other-serviecs">
+						<h3>Seller Other Services</h3>
+						<p>see more</p>
+					</div>
+
+					<div class="other-services-container">
+						<!--=========================== Other Services Card 1 ==========================-->
+						<div class="other-services card p-0">
+							<img class="other-services-img" src="./assets/SuggestedServiecs.png" alt="">
+							<div class="other-services-details">
+								<p class="other-text">Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...</p>
+								<div class="rate-and-price-other-serviecs">
+
+									<div class="rate-and-price">
+										<div class="rate-others">
+											<img class="heart cp" src="./assets/star.svg" alt="">
+											<p>4.9 (50)</p>
+										</div>
+										<div class="price-others">
+											<img class="heart cp" src="./assets/priceTag.svg" alt="">
+											<p>$10</p>
+										</div>
+									</div>
+									<div class="like-others">
+										<img class="heart cp" src="./assets/heartLike.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--=========================== Other Services Card 2 ==========================-->
+						<div class="other-services card p-0">
+							<img class="other-services-img" src="./assets/SuggestedServiecs.png" alt="">
+							<div class="other-services-details">
+								<p class="other-text">Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...</p>
+								<div class="rate-and-price-other-serviecs">
+
+									<div class="rate-and-price">
+										<div class="rate-others">
+											<img src="./assets/star.svg" alt="">
+											<p>4.9 (50)</p>
+										</div>
+										<div class="price-others">
+											<img src="./assets/priceTag.svg" alt="">
+											<p>$10</p>
+										</div>
+									</div>
+
+									<div class="like-others">
+										<img class="heart cp liked" src="./assets/redHeartLike.svg" alt="">
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!--=========================== Other Services Card 3 ==========================-->
+						<div class="other-services card p-0">
+							<img class="other-services-img" src="./assets/SuggestedServiecs.png" alt="">
+							<div class="other-services-details">
+								<p class="other-text">Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...</p>
+								<div class="rate-and-price-other-serviecs">
+
+									<div class="rate-and-price">
+										<div class="rate-others">
+											<img src="./assets/star-filled.svg" alt="">
+											<p>4.9 (50)</p>
+										</div>
+										<div class="price-others">
+											<img src="./assets/priceTag.svg" alt="">
+											<p>$10</p>
+										</div>
+									</div>
+
+									<div class="like-others">
+										<img class="heart cp" src="./assets/heartLike.svg" alt="">
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- =========================================== End SideBar ========================================= -->
+
+		</div>
+	</div>
+
+	<!-- ============================================= Suggested Serviecs ============================================ -->
+	<div id="servies-cards-container" class="container">
+		<h1 class="service-header-text">suggested serviecs</h1>
+		<div class="serviecs-section-container">
+			<!-- ========================= Card 1 =============================== -->
+			<div class="service-card">
+				<div class="heart-like-container">
+					<img class="heart cp" src="./assets/heartLike.svg" alt="" />
+				</div>
+				<img class="card-img" src="./assets/SuggestedServiecs.png" alt="" />
+				<p class="service-details">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+				</p>
+				<div class="serviecs-icons">
+					<div class="star">
+						<img src="./assets/star-filled.svg" alt="" />
+						<p>4.9</p>
+					</div>
+					<div class="vector">
+						<img src="./assets/vector.svg" alt="" />
+						<p>300</p>
+					</div>
+				</div>
+				<div class="serviecs-client">
+					<div>
+						<img src="./assets/client.jpeg" alt="" />
+						<p>Jane Smith</p>
+					</div>
+
+					<div class="serviecs-cost-and-client">
+						<img src="./assets/priceTag.svg" alt="" />
+						<p>10$</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- ========================= Card 2 =============================== -->
+			<div class="service-card">
+				<div class="heart-like-container">
+					<img class="heart cp" src="./assets/heartLike.svg" alt="" />
+				</div>
+				<img class="card-img" src="./assets/SuggestedServiecs.png" alt="" />
+				<p class="service-details">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+				</p>
+				<div class="serviecs-icons">
+					<div class="star">
+						<img src="./assets/star-filled.svg" alt="" />
+						<p>4.9</p>
+					</div>
+					<div class="vector">
+						<img src="./assets/vector.svg" alt="" />
+						<p>300</p>
+					</div>
+				</div>
+				<div class="serviecs-client">
+					<div>
+						<img src="./assets/client.jpeg" alt="" />
+						<p>Jane Smith</p>
+					</div>
+
+					<div class="serviecs-cost-and-client">
+						<img src="./assets/priceTag.svg" alt="" />
+						<p>10$</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- ========================= Card 3 =============================== -->
+
+			<div class="service-card">
+				<div class="heart-like-container">
+					<img class="heart cp" src="./assets/heartLike.svg" alt="" />
+				</div>
+				<img class="card-img" src="./assets/SuggestedServiecs.png" alt="" />
+				<p class="service-details">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+				</p>
+				<div class="serviecs-icons">
+					<div class="star">
+						<img src="./assets/star-filled.svg" alt="" />
+						<p>4.9</p>
+					</div>
+					<div class="vector">
+						<img src="./assets/vector.svg" alt="" />
+						<p>300</p>
+					</div>
+				</div>
+				<div class="serviecs-client">
+					<div>
+						<img src="./assets/client.jpeg" alt="" />
+						<p>Jane Smith</p>
+					</div>
+
+					<div class="serviecs-cost-and-client">
+						<img src="./assets/priceTag.svg" alt="" />
+						<p>10$</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- ========================= Card 4 =============================== -->
+
+			<div class="service-card">
+				<div class="heart-like-container">
+					<img class="heart cp" src="./assets/redHeartLike.svg" alt="" />
+				</div>
+				<img class="card-img" src="./assets/SuggestedServiecs.png" alt="" />
+				<p class="service-details">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+				</p>
+				<div class="serviecs-icons">
+					<div class="star">
+						<img src="./assets/star-filled.svg" alt="" />
+						<p>4.9</p>
+					</div>
+					<div class="vector">
+						<img src="./assets/vector.svg" alt="" />
+						<p>300</p>
+					</div>
+				</div>
+				<div class="serviecs-client">
+					<div>
+						<img src="./assets/client.jpeg" alt="" />
+						<p>Jane Smith</p>
+					</div>
+
+					<div class="serviecs-cost-and-client">
+						<img src="./assets/priceTag.svg" alt="" />
+						<p>10$</p>
+					</div>
+				</div>
+			</div>
+			<!-- ========================= End Of Cards =============================== -->
+		</div>
+	</div>
+	<!-- ============================================= End Suggested Serviecs ============================================ -->
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
