@@ -320,9 +320,48 @@ $(document).ready(function () {
 		};
 		all_rates.push(payload);
 		renderRates(payload);
+		$('#comment-value').val('');
 	}
 	$('.post-review').on('click', function () {
-		updateOverallRate();
+		let all_rates_selected = [];
+		$('.rate-stars-container').each(function (i, el) {
+			let rate = parseInt($(el).attr('data-rate'));
+			all_rates_selected.push(rate);
+		});
+		if ($('#comment-value').val()) {
+			$('#comment-value').css({
+				'border': '1px solid var(--gray-50)'
+			})
+			$('.comment-error').hide();
+		} else {
+			if (!$('#comment-value').val()) {
+				$('#comment-value').css({
+					'border': '1px solid var(--error-300)'
+				})
+				$('.comment-error').show();
+			}
+		}
+		if (!all_rates_selected.every((el) => el > 0)) {
+			$('#about-rate-container').css({
+				'border': '1px solid var(--error-300)'
+			})
+			window.scrollTo({
+				top: $('#about-rate-container').offset().top - 200,
+				behavior: 'smooth'
+			})
+			$('.rate-error').show();
+		} else {
+			$('.rate-error').hide();
+
+			$('#about-rate-container').css({
+				'border': 'none'
+			})
+
+		}
+		if (all_rates_selected.every((el) => el > 0) && $('#comment-value').val()) {
+			updateOverallRate();
+
+		}
 	});
 
 	all_rates.forEach(function (rate) {
