@@ -2,8 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 
-html,body {
+html,
+body {
 	overflow-x: hidden;
+	padding-top: 100px;
 }
 
 .container {
@@ -441,9 +443,10 @@ body .btn-primary {
 	border-radius: 0 0 8px 8px;
 	background-color: var(--base-white);
 	box-shadow: 0 4px 26px 0 var(--shadow-color);
-	position: sticky;
+	position: fixed;
 	transition: all 0.5s;
 	top: 0;
+	width: 100%;
 	z-index: 9999;
 }
 
@@ -515,7 +518,7 @@ body .btn-primary {
 .app-header .navbar .options .toggle-btn {
 	position: absolute;
 	top: 12px;
-	right: -10px;
+	right: -5px;
 	left: auto;
 	cursor: pointer;
 	width: 30px;
