@@ -373,4 +373,15 @@ $(document).ready(function () {
 		renderRates(rate);
 	});
 	// ==================================== end post-review =====================================//
+
+	// ==================================== Start Copy-btn =====================================//
+	$('#copy-btn').click(function () {
+		var currentUrl = window.location.href;
+		navigator.clipboard.writeText(currentUrl);
+		$('#copied').fadeIn();
+		setTimeout(() => {
+			$('#copied').fadeOut();
+		}, 2000);
+	});
+	// ==================================== Start Copy-btn =====================================//
 });
