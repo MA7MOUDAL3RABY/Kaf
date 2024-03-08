@@ -20,6 +20,10 @@ This repository contains the source code for a website built using HTML, CSS, an
 
 - Review: Rate in comment calculated based on selected 3 rates
 
+- Copy Button: The user can copy the page URL by clicking on the copy icon at the share widget
+
+- Validation: The user must insert a value to the comment field and set all rates before submitting 
+
 ## Repository Structure
 index.html: The main HTML file containing the structure of the website.
 - ar-index.html: the translated page of Kaf in Arabic Language.
