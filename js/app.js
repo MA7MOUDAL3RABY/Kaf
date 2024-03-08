@@ -324,6 +324,8 @@ $(document).ready(function () {
 	}
 	$('.post-review').on('click', function () {
 		let all_rates_selected = [];
+
+		// Start Validations Rules
 		$('.rate-stars-container').each(function (i, el) {
 			let rate = parseInt($(el).attr('data-rate'));
 			all_rates_selected.push(rate);
@@ -358,6 +360,9 @@ $(document).ready(function () {
 			})
 
 		}
+		// End Validations Rules 
+
+		// All Valid
 		if (all_rates_selected.every((el) => el > 0) && $('#comment-value').val()) {
 			updateOverallRate();
 
@@ -368,5 +373,4 @@ $(document).ready(function () {
 		renderRates(rate);
 	});
 	// ==================================== end post-review =====================================//
-	// ==================================== End Rating =====================================//
 });
